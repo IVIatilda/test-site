@@ -29,6 +29,7 @@ jQuery("document").ready(function(s){
 			success: function( data ) {
 				jQuery('#modalTetx').text('Сообщение отправлено!');
 				jQuery('#formSent').fadeIn(500);
+				form[0].reset();
 			},
 			error: function( data ) {
 				jQuery('#modalTetx').text('Ошибка при отправке.');
