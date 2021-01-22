@@ -349,7 +349,7 @@ footer.footer {
     bottom: 0;
     z-index: 1000;
     background: rgb(0 0 0 / 60%);
-    display: flex;
+    display: flex!important;
     align-items: center;
     justify-content: center;
     display: none;
