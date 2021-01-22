@@ -23,7 +23,7 @@ jQuery("document").ready(function(s){
 		button.preventDefault();
 		var form = jQuery(this);
 		jQuery.ajax({
-			url: '/send.php',
+			url: '../send.php',
 			type: 'POST',
 			data: form.serialize(),
 			success: function( data ) {
@@ -31,7 +31,5 @@ jQuery("document").ready(function(s){
 			}
 		});
 	});
-
-	jQuery( function(){jQuery( 'a' ).imageLightbox();});
 
 });
