@@ -1,0 +1,546 @@
+@font-face {
+	font-family: "Muller"; 
+	src: url("fonts/MullerRegular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face {
+	font-family: "MullerExtraBold";
+	src: url("fonts/MullerExtraBold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: 900; 
+} 
+
+@font-face {
+	font-family: "MullerBold";
+	src: url("fonts/MullerBold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: ищдв; 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Muller";
+    position: relative;
+    color: rgb(56, 36, 0);
+    background: #fff;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 70px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-brown {
+    color: rgb(185, 145, 80);
+}
+
+.text-dark {
+	color: rgb(56, 36, 0);
+}
+
+.text-orange {
+	color: rgb(255, 175, 24);
+}
+
+h1 {
+    font-family: "MullerExtraBold";
+    font-size: 45px;
+    line-height: 1.222;
+}
+
+.button {
+    font-size: 16px;
+    font-family: "MullerBold";
+    color: rgb(56, 36, 0);
+    background-color: rgb(255, 175, 24);
+    border: 2px solid rgb(255, 175, 24);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background: #fff;
+}
+
+input {
+    padding: 0 24px;
+    border-width: 1px;
+    border-color: rgb(185, 145, 80);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 58px;
+    margin-bottom: 25px;
+    outline: none;
+    font-size: 18px;
+    color: rgb(185, 145, 80);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(203, 168, 110);
+}
+
+::-moz-placeholder {
+    color: rgb(203, 168, 110);
+}
+
+:-moz-placeholder {
+    color: rgb(203, 168, 110);
+}
+
+:-ms-input-placeholder {
+    color: rgb(203, 168, 110);
+}
+
+
+header.header {
+    padding: 15px 0;
+    box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span.close-menu {
+    display: none;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu ul li {
+    margin: 0;
+    padding: 0 24px;
+}
+
+.header-menu ul li a {
+    font-size: 16px;
+    color: rgb(164, 107, 0);
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu-button {
+    display: none;
+}
+
+.block1 {
+    position: relative;
+    padding: 55px 0;
+    margin-bottom: 40px;
+}
+
+.block1 img.pizza {
+    position: absolute;
+    right: 0;
+    left: 695px;
+    top: 105px;
+}
+
+.block1 h1 {
+    margin-bottom: 40px;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 670px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.advantage {
+    width: 48%;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.advantage-img {
+    margin-right: 17px;
+}
+
+.advantage-text {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    letter-spacing: 0.3px;
+}
+
+.advantage-text span {
+    font-size: 16px;
+    font-family: "MullerExtraBold";
+    color: rgb(255, 175, 24);
+    text-transform: uppercase;
+    line-height: 1.5;
+    display: block;
+}
+
+.block1 .button {
+    width: 224px;
+    height: 60px;
+}
+
+.block2 {
+    padding: 55px 0;
+    margin-bottom: 120px;
+}
+
+.block2 .title {
+    font-size: 35px;
+    font-family: "MullerBold";
+    line-height: 1.571;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 24px;
+}
+
+.product {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 13.8px 1.2px rgb(152 152 152 / 20%);
+    padding: 25px 20px 15px;
+}
+
+a.image-product {
+    text-align: center;
+    display: block;
+    height: 166px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-family: "MullerBold";
+    color: rgb(56, 36, 0);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-filling {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    text-align: center;
+    height: 70px;
+}
+
+.product .button {
+    width: 100%;
+    height: 50px;
+}
+
+.block3 {
+    position: relative;
+    padding: 55px 0 0;
+}
+
+.block3 .pizza {
+    position: absolute;
+    left: 910px;
+    bottom: 0;
+}
+
+.block3-content {
+    display: flex;
+    max-width: 840px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.block3 .title {
+    font-size: 35px;
+    font-family: "MullerExtraBold";
+    line-height: 1.286;
+    margin-bottom: 60px;
+}
+
+.block3-text {
+    max-width: 410px;
+    padding-right: 24px;
+}
+
+.block3-text p {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1.5;
+}
+
+.block3-form {
+    max-width: 330px;
+}
+
+.block3-form .button {
+    height: 60px;
+    width: 100%;
+}
+
+footer.footer {
+    box-shadow: 0px 0px 13.8px 1.2px rgb(152 152 152 / 20%);
+    padding: 15px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content > div {
+    width: 33%;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: rgb(186, 179, 179);
+    text-align: center;
+}
+
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgb(0 0 0 / 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    max-width: 80%;
+    padding: 40px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: -30px;
+    right: -25px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-text {
+    font-size: 20px;
+    color: rgb(56, 36, 0);
+}
+
+@media screen and (max-width: 1000px) {
+    .products-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header-menu ul li {
+        margin: 0;
+        padding: 0 15px;
+    }
+    .block1 img.pizza {
+        position: absolute;
+        right: 0;
+        left: 660px;
+        top: 105px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .block1 {
+        padding-bottom: 210px;
+        margin: 0;
+    }
+
+    .block1 img.pizza {
+        position: absolute;
+        right: 0;
+        left: 40%;
+        bottom: 0;
+        height: 300px;
+        top: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header-menu-button {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .header-menu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: rgb(0 0 0 / 60%);
+        z-index: 1000;
+        left: 130%;
+        right: -30%;
+        transition: 0.5s;
+        box-shadow: 0px 0px 30px #000;
+    }
+
+    .header-menu.active {
+        left: 0;
+        right: 0;
+    }
+
+    span.close-menu {
+        position: absolute;
+        left: -40px;
+        top: 10px;
+        color: #fff;
+        font-size: 50px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-menu ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        width: 350px;
+        max-width: 85%;
+        padding: 25px;
+    }
+
+    .header-menu ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #a77112;
+    }
+
+    .header-menu ul li:last-child {
+        border: none;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .block3-content {
+        flex-wrap: wrap;
+    }
+
+    .block3-text {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .block3 .pizza {
+        position: absolute;
+        left: 350px;
+        bottom: -20px;
+        z-index: -100;
+    }
+
+    .footer-content > div {
+        width: 50%;
+    }
+
+    .footer-content > div:last-child {
+        display: none;
+    }
+
+    .footer-copyright {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advantage {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .block1 {
+        padding-bottom: 55px;
+        margin: 0;
+    }
+
+    .block1 img.pizza {
+        display: none;
+    }
+
+    .block3 .pizza {
+        display: none;
+    }
+
+    .block3-form {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content > div {
+        width: 100%;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
