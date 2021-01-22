@@ -27,7 +27,12 @@ jQuery("document").ready(function(s){
 			type: 'POST',
 			data: form.serialize(),
 			success: function( data ) {
-				jQuery('#formSent').fadeIn(500);	
+				jQuery('#modalTetx').text('Сообщение отправлено!');
+				jQuery('#formSent').fadeIn(500);
+			},
+			error: function( data ) {
+				jQuery('#modalTetx').text('Ошибка при отправке.');
+				jQuery('#formSent').fadeIn(500);
 			}
 		});
 	});
