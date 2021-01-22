@@ -26,7 +26,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -200,6 +201,7 @@ span.close-menu {
 
 .advantage-img {
     margin-right: 17px;
+    width: 150px;
 }
 
 .advantage-text {

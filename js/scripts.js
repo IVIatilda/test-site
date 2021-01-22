@@ -1,6 +1,10 @@
 jQuery("document").ready(function(s){
 
 	$("#phone").mask("+7 (999) 999-99-99");
+
+	$("#name").oninput = function(){
+    	this.value = this.value.replace('.', '');
+	}
 	
 	jQuery(".header-menu-button").click (function(){
 		jQuery('.header-menu').addClass('active');
